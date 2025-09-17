@@ -131,20 +131,17 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <TestimonialsSection />
-
-      {/* Gallery Section */}
-      <GallerySection />
-
       {/* Services Card Section */}
       <ServicesCardSection />
 
       {/* Plans Card Section */}
       <PlansCardSection />
 
-      {/* Partners Section */}
-      <PartnerSection />
+      {/* Gallery Section */}
+      <GallerySection />
+
+      {/* Testimonials Section */}
+      <TestimonialsSection />
 
       {/* Stats Section */}
       <section className="py-24 bg-card/20">
