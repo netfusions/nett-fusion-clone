@@ -1,6 +1,11 @@
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import StatsCard from '@/components/StatsCard';
+import GallerySection from '@/components/GallerySection';
+import ServicesCardSection from '@/components/ServicesCardSection';
+import PlansCardSection from '@/components/PlansCardSection';
+import TestimonialsSection from '@/components/TestimonialsSection';
+import PartnerSection from '@/components/PartnerSection';
 import { Wifi, Zap, Shield, Award, ArrowRight, Globe, Router, Signal, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import heroImage from '@/assets/hero-internet.jpg';
@@ -125,6 +130,21 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Testimonials Section */}
+      <TestimonialsSection />
+
+      {/* Gallery Section */}
+      <GallerySection />
+
+      {/* Services Card Section */}
+      <ServicesCardSection />
+
+      {/* Plans Card Section */}
+      <PlansCardSection />
+
+      {/* Partners Section */}
+      <PartnerSection />
 
       {/* Stats Section */}
       <section className="py-24 bg-card/20">

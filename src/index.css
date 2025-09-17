@@ -207,3 +207,77 @@ All colors MUST be HSL for Nett Fusion cable & internet website.
     transform: scale(1);
   }
 }
+
+/* Gallery scroll animation */
+.gallery-scroll {
+  display: flex;
+  animation: scroll-horizontal 30s linear infinite;
+  width: fit-content;
+}
+
+.gallery-card {
+  flex: 0 0 320px;
+  margin-right: 2rem;
+  background: hsl(var(--glass-card));
+  border: 1px solid hsl(var(--glass-border));
+  backdrop-filter: blur(10px);
+}
+
+@keyframes scroll-horizontal {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Testimonials scroll animation */
+.testimonials-scroll {
+  display: flex;
+  animation: scroll-horizontal-slow 40s linear infinite;
+  width: fit-content;
+}
+
+.testimonial-card {
+  flex: 0 0 400px;
+  margin-right: 2rem;
+  background: hsl(var(--glass-card));
+  border: 1px solid hsl(var(--glass-border));
+  backdrop-filter: blur(10px);
+}
+
+@keyframes scroll-horizontal-slow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Partners scroll animation */
+.partners-scroll {
+  display: flex;
+  animation: scroll-horizontal-fast 20s linear infinite;
+  width: fit-content;
+  align-items: center;
+}
+
+.partner-logo {
+  flex: 0 0 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 4rem;
+  height: 80px;
+}
+
+@keyframes scroll-horizontal-fast {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
