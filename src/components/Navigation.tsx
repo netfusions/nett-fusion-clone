@@ -46,11 +46,9 @@ const Navigation = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <a href="tel:8662407507">
-              <Button variant="default" className="bg-gradient-to-r from-primary to-primary-glow hover:shadow-lg hover-lift">
-                (866) 240-7507
-              </Button>
-            </a>
+            <Button variant="default" className="bg-gradient-to-r from-primary to-primary-glow hover:shadow-lg hover-lift">
+              Get Connected
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -78,11 +76,9 @@ const Navigation = () => {
                   {link.label}
                 </Link>
               ))}
-              <a href="tel:8662407507">
-                <Button className="mt-4 bg-gradient-to-r from-primary to-primary-glow">
-                  (866) 240-7507
-                </Button>
-              </a>
+              <Button className="mt-4 bg-gradient-to-r from-primary to-primary-glow">
+                Get Connected
+              </Button>
             </div>
           </div>
         )}
