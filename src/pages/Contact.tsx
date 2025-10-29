@@ -71,7 +71,7 @@ const Contact = () => {
                 Speak with our sales team or get technical support
               </p>
               <div className="space-y-2">
-                <div className="text-lg font-semibold text-primary">1-800-NET-FUSION</div>
+                <a href="tel:8662407507" className="text-lg font-semibold text-primary">(866) 240-7507</a>
                 <div className="text-sm text-muted-foreground">Sales & New Service</div>
               </div>
             </Card>
@@ -84,10 +84,12 @@ const Contact = () => {
               <p className="text-muted-foreground mb-6">
                 Get instant answers from our support team
               </p>
-              <Button className="bg-gradient-to-r from-secondary to-primary hover-lift">
-                Start Chat
-                <ArrowRight className="ml-2 w-4 h-4" />
-              </Button>
+              <a href="tel:8662407507">
+                <Button className="bg-gradient-to-r from-secondary to-primary hover-lift">
+                  Start Chat
+                  <ArrowRight className="ml-2 w-4 h-4" />
+                </Button>
+              </a>
             </Card>
 
             <Card className="interactive-card text-center p-8">
@@ -98,7 +100,7 @@ const Contact = () => {
               <p className="text-muted-foreground mb-6">
                 Send us a detailed message about your needs
               </p>
-              <div className="text-sm text-primary">info@nettfusion.com</div>
+              {/* Email removed as requested */}
             </Card>
           </div>
         </div>
@@ -182,13 +184,15 @@ const Contact = () => {
                     />
                   </div>
 
-                  <Button 
-                    type="submit" 
-                    className="w-full bg-gradient-to-r from-primary to-primary-glow hover-lift glow-primary"
-                  >
-                    Send Message
-                    <ArrowRight className="ml-2 w-4 h-4" />
-                  </Button>
+                  <a href="tel:8662407507">
+                    <Button 
+                      type="button" 
+                      className="w-full bg-gradient-to-r from-primary to-primary-glow hover-lift glow-primary"
+                    >
+                      Call (866) 240-7507
+                      <ArrowRight className="ml-2 w-4 h-4" />
+                    </Button>
+                  </a>
                 </form>
               </Card>
             </div>
@@ -202,40 +206,7 @@ const Contact = () => {
               </p>
 
               <div className="space-y-8">
-                {/* Office Location */}
-                <Card className="glass-card p-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-xl flex items-center justify-center flex-shrink-0">
-                      <MapPin className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold mb-2">Main Office</h3>
-                      <p className="text-muted-foreground text-sm">
-                        123 Network Avenue<br />
-                        Digital City, DC 12345<br />
-                        United States
-                      </p>
-                    </div>
-                  </div>
-                </Card>
-
-                {/* Business Hours */}
-                <Card className="glass-card p-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-gradient-to-r from-secondary to-primary rounded-xl flex items-center justify-center flex-shrink-0">
-                      <Clock className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold mb-2">Business Hours</h3>
-                      <div className="text-muted-foreground text-sm space-y-1">
-                        <p>Monday - Friday: 8:00 AM - 8:00 PM</p>
-                        <p>Saturday: 9:00 AM - 6:00 PM</p>
-                        <p>Sunday: 10:00 AM - 4:00 PM</p>
-                        <p className="text-primary font-medium">Technical Support: 24/7</p>
-                      </div>
-                    </div>
-                  </div>
-                </Card>
+                {/* Office Location and Business Hours removed as requested */}
 
                 {/* Support Channels */}
                 <Card className="glass-card p-6">
@@ -247,14 +218,9 @@ const Contact = () => {
                       <h3 className="font-semibold mb-2">Support Channels</h3>
                       <div className="text-muted-foreground text-sm space-y-2">
                         <div>
-                          <span className="text-primary font-medium">Sales:</span> 1-800-NET-FUSION
+                          <span className="text-primary font-medium">Sales:</span> <a href="tel:8662407507">(866) 240-7507</a>
                         </div>
-                        <div>
-                          <span className="text-secondary font-medium">Tech Support:</span> 1-800-TECH-HELP
-                        </div>
-                        <div>
-                          <span className="text-primary font-medium">Email:</span> support@nettfusion.com
-                        </div>
+                        {/* Tech Support and Email removed as requested */}
                       </div>
                     </div>
                   </div>
@@ -300,9 +266,11 @@ const Contact = () => {
 
           <div className="text-center mt-8">
             <p className="text-muted-foreground mb-4">Not sure if we serve your area?</p>
-            <Button variant="outline" className="hover-lift border-primary/20 hover:border-primary">
-              Check Service Availability
-            </Button>
+            <a href="tel:8662407507">
+              <Button variant="outline" className="hover-lift border-primary/20 hover:border-primary">
+                Check Service Availability
+              </Button>
+            </a>
           </div>
         </div>
       </section>
@@ -318,12 +286,16 @@ const Contact = () => {
               Join thousands of satisfied customers and upgrade to Nett Fusion today.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-gradient-to-r from-primary to-primary-glow hover-lift glow-primary">
-                Order Online Now
-              </Button>
-              <Button variant="outline" size="lg" className="hover-lift border-primary/20 hover:border-primary">
-                Call 1-800-NET-FUSION
-              </Button>
+              <a href="tel:8662407507">
+                <Button size="lg" className="bg-gradient-to-r from-primary to-primary-glow hover-lift glow-primary">
+                  Order Online Now
+                </Button>
+              </a>
+              <a href="tel:8662407507">
+                <Button variant="outline" size="lg" className="hover-lift border-primary/20 hover:border-primary">
+                  Call (866) 240-7507
+                </Button>
+              </a>
             </div>
           </div>
         </div>
