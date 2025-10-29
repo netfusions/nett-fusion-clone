@@ -53,16 +53,10 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-primary" />
-                <span className="text-muted-foreground text-sm">1-800-NET-FUSION</span>
+                <a href="tel:8662407507" className="text-muted-foreground text-sm">(866) 240-7507</a>
               </div>
-              <div className="flex items-center gap-3">
-                <Mail className="w-4 h-4 text-primary" />
-                <span className="text-muted-foreground text-sm">info@nettfusion.com</span>
-              </div>
-              <div className="flex items-start gap-3">
-                <MapPin className="w-4 h-4 text-primary mt-0.5" />
-                <span className="text-muted-foreground text-sm">123 Network Ave, Digital City, DC 12345</span>
-              </div>
+              {/* Email removed as requested */}
+              {/* Address removed as requested */}
             </div>
           </div>
         </div>
@@ -70,7 +64,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-border/10 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-muted-foreground text-sm">
-            © 2024 Nett Fusion. All rights reserved.
+            © 2025 Nett Fusion. All rights reserved.
           </p>
           <div className="flex gap-6 mt-4 md:mt-0">
             <Link to="/privacy" className="text-muted-foreground hover:text-primary transition-colors text-sm">
