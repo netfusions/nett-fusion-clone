@@ -55,6 +55,10 @@ const Footer = () => {
                 <Phone className="w-4 h-4 text-primary" />
                 <a href="tel:8662407507" className="text-muted-foreground text-sm">(866) 240-7507</a>
               </div>
+              <div className="flex items-center gap-3">
+                <Phone className="w-4 h-4 text-primary" />
+                <a href="tel:18332976760" className="text-muted-foreground text-sm">(833) 297-6760</a>
+              </div>
               {/* Email removed as requested */}
               {/* Address removed as requested */}
             </div>
