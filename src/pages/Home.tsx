@@ -69,13 +69,13 @@ const Home = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:8662407507">
+              <a href="tel:18332976760">
                 <Button size="lg" className="bg-gradient-to-r from-primary to-primary-glow hover-lift glow-primary">
                   View Plans
                   <ArrowRight className="ml-2 w-4 h-4" />
                 </Button>
               </a>
-              <a href="tel:8662407507">
+              <a href="tel:18332976760">
                 <Button variant="outline" size="lg" className="hover-lift border-primary/20 hover:border-primary">
                   Get Quote
                 </Button>
@@ -178,12 +178,12 @@ const Home = () => {
               Join thousands of satisfied customers and upgrade to Nett Fusion today.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:8662407507">
+              <a href="tel:18332976760">
                 <Button size="lg" className="bg-gradient-to-r from-primary to-primary-glow hover-lift glow-primary">
                   Choose Your Plan
                 </Button>
               </a>
-              <a href="tel:8662407507">
+              <a href="tel:18332976760">
                 <Button variant="outline" size="lg" className="hover-lift border-primary/20 hover:border-primary">
                   Contact Sales
                 </Button>
