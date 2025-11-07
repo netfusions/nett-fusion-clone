@@ -1,0 +1,283 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Premium Dark Design System inspired by outcrowd.io 
+All colors MUST be HSL for Nett Fusion cable & internet website.
+*/
+
+@layer base {
+  :root {
+    /* Dark theme base colors */
+    --background: 220 20% 8%;
+    --foreground: 210 40% 98%;
+
+    /* Glass card system */
+    --card: 220 15% 12%;
+    --card-foreground: 210 40% 98%;
+    --glass-card: 220 15% 12% / 0.6;
+    --glass-border: 210 40% 98% / 0.1;
+
+    /* Popover colors */
+    --popover: 220 15% 12%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Premium orange accent (outcrowd style) */
+    --primary: 14 100% 57%;
+    --primary-foreground: 210 40% 98%;
+    --primary-glow: 14 100% 67%;
+
+    /* Secondary blue accents */
+    --secondary: 217 91% 60%;
+    --secondary-foreground: 210 40% 98%;
+
+    /* Muted variations */
+    --muted: 220 15% 15%;
+    --muted-foreground: 215 20% 65%;
+
+    /* Accent variations */
+    --accent: 220 15% 15%;
+    --accent-foreground: 210 40% 98%;
+
+    /* Status colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+    --success: 142 76% 36%;
+    --warning: 38 92% 50%;
+
+    /* Interactive elements */
+    --border: 220 15% 18%;
+    --input: 220 15% 15%;
+    --ring: 14 100% 57%;
+
+    /* Enhanced radius system */
+    --radius: 12px;
+    
+    /* Premium gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-hero: linear-gradient(135deg, hsl(220 20% 8%), hsl(220 15% 12%));
+    --gradient-card: linear-gradient(145deg, hsl(var(--glass-card)), hsl(220 10% 10% / 0.4));
+    --gradient-accent: linear-gradient(90deg, hsl(var(--primary)), hsl(var(--secondary)));
+    
+    /* 3D shadows */
+    --shadow-glass: 0 8px 32px hsl(0 0% 0% / 0.4), inset 0 1px 0 hsl(210 40% 98% / 0.1);
+    --shadow-float: 0 20px 60px hsl(0 0% 0% / 0.5), 0 8px 20px hsl(0 0% 0% / 0.3);
+    --shadow-primary: 0 0 40px hsl(var(--primary) / 0.3);
+    
+    /* Transitions */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  /* Light mode (keeping minimal as we focus on dark) */
+  .light {
+    --background: 210 40% 98%;
+    --foreground: 220 20% 8%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 8%;
+    --primary: 14 100% 57%;
+    --primary-foreground: 210 40% 98%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    background: var(--gradient-hero);
+  }
+
+  /* Glass card utility */
+  .glass-card {
+    background: var(--gradient-card);
+    backdrop-filter: blur(20px);
+    border: 1px solid hsl(var(--glass-border));
+    box-shadow: var(--shadow-glass);
+  }
+
+  /* Floating animation */
+  .float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .float-delayed {
+    animation: float 6s ease-in-out infinite;
+    animation-delay: -2s;
+  }
+
+  /* 3D hover effects */
+  .hover-lift {
+    transition: var(--transition-smooth);
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: var(--shadow-float);
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    background: var(--gradient-accent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Glowing elements */
+  .glow-primary {
+    box-shadow: var(--shadow-primary);
+  }
+}
+
+@layer components {
+  /* Hero stats badges */
+  .stats-badge {
+    @apply glass-card p-4 rounded-xl hover-lift;
+    position: absolute;
+  }
+
+  /* Interactive cards */
+  .interactive-card {
+    @apply glass-card p-6 rounded-2xl hover-lift cursor-pointer;
+    transition: var(--transition-smooth);
+  }
+
+  .interactive-card:hover {
+    border-color: hsl(var(--primary));
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Gallery scroll animation */
+.gallery-scroll {
+  display: flex;
+  animation: scroll-horizontal 30s linear infinite;
+  width: fit-content;
+}
+
+.gallery-card {
+  flex: 0 0 320px;
+  margin-right: 2rem;
+  background: hsl(var(--glass-card));
+  border: 1px solid hsl(var(--glass-border));
+  backdrop-filter: blur(10px);
+}
+
+@keyframes scroll-horizontal {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Testimonials scroll animation */
+.testimonials-scroll {
+  display: flex;
+  animation: scroll-horizontal-slow 40s linear infinite;
+  width: fit-content;
+}
+
+.testimonial-card {
+  flex: 0 0 400px;
+  margin-right: 2rem;
+  background: hsl(var(--glass-card));
+  border: 1px solid hsl(var(--glass-border));
+  backdrop-filter: blur(10px);
+}
+
+@keyframes scroll-horizontal-slow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Partners scroll animation */
+.partners-scroll {
+  display: flex;
+  animation: scroll-horizontal-fast 20s linear infinite;
+  width: fit-content;
+  align-items: center;
+}
+
+.partner-logo {
+  flex: 0 0 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 4rem;
+  height: 80px;
+}
+
+@keyframes scroll-horizontal-fast {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
