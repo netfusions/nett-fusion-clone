@@ -72,6 +72,7 @@ const Contact = () => {
               </p>
               <div className="space-y-2">
                 <a href="tel:8662407507" className="text-lg font-semibold text-primary">(866) 240-7507</a>
+                <a href="tel:18332976760" className="text-lg font-semibold text-primary">(833) 297-6760</a>
                 <div className="text-sm text-muted-foreground">Sales & New Service</div>
               </div>
             </Card>
@@ -84,7 +85,7 @@ const Contact = () => {
               <p className="text-muted-foreground mb-6">
                 Get instant answers from our support team
               </p>
-              <a href="tel:8662407507">
+              <a href="tel:18332976760">
                 <Button className="bg-gradient-to-r from-secondary to-primary hover-lift">
                   Start Chat
                   <ArrowRight className="ml-2 w-4 h-4" />
@@ -184,12 +185,12 @@ const Contact = () => {
                     />
                   </div>
 
-                  <a href="tel:8662407507">
+                  <a href="tel:18332976760">
                     <Button 
                       type="button" 
                       className="w-full bg-gradient-to-r from-primary to-primary-glow hover-lift glow-primary"
                     >
-                      Call (866) 240-7507
+                      Call (833) 297-6760
                       <ArrowRight className="ml-2 w-4 h-4" />
                     </Button>
                   </a>
@@ -219,6 +220,9 @@ const Contact = () => {
                       <div className="text-muted-foreground text-sm space-y-2">
                         <div>
                           <span className="text-primary font-medium">Sales:</span> <a href="tel:8662407507">(866) 240-7507</a>
+                        </div>
+                        <div>
+                          <span className="text-primary font-medium">Sales:</span> <a href="tel:18332976760">(833) 297-6760</a>
                         </div>
                         {/* Tech Support and Email removed as requested */}
                       </div>
@@ -266,7 +270,7 @@ const Contact = () => {
 
           <div className="text-center mt-8">
             <p className="text-muted-foreground mb-4">Not sure if we serve your area?</p>
-            <a href="tel:8662407507">
+            <a href="tel:18332976760">
               <Button variant="outline" className="hover-lift border-primary/20 hover:border-primary">
                 Check Service Availability
               </Button>
@@ -286,14 +290,14 @@ const Contact = () => {
               Join thousands of satisfied customers and upgrade to Nett Fusion today.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:8662407507">
+              <a href="tel:18332976760">
                 <Button size="lg" className="bg-gradient-to-r from-primary to-primary-glow hover-lift glow-primary">
                   Order Online Now
                 </Button>
               </a>
-              <a href="tel:8662407507">
+              <a href="tel:18332976760">
                 <Button variant="outline" size="lg" className="hover-lift border-primary/20 hover:border-primary">
-                  Call (866) 240-7507
+                  Call (833) 297-6760
                 </Button>
               </a>
             </div>
